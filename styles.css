@@ -1001,16 +1001,20 @@ strong {
   padding: 0 0 120px;
 }
 
-.contact__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
+.contact__wrap {
   border-radius: 28px;
-  overflow: hidden;
+  padding: 64px 56px;
   border: 1px solid var(--line-soft);
   background:
     radial-gradient(ellipse 55% 70% at 0% 0%, rgba(201, 160, 106, 0.14), transparent 55%),
     linear-gradient(155deg, var(--bg-3), var(--bg));
+}
+
+.contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0 36px;
 }
 
 .contact__info {
@@ -1228,7 +1232,7 @@ strong {
   .letter__grid,
   .winter__grid,
   .faq__grid,
-  .contact__grid,
+  .contact__wrap,
   .footer__inner {
     grid-template-columns: 1fr;
   }
@@ -1288,11 +1292,7 @@ strong {
     align-items: start;
   }
 
-  .contact__form {
-    border-left: none;
-    border-top: 1px solid var(--line-soft);
-  }
-
+  .contact__wrap,
   .promise__inner {
     padding: 48px 28px;
   }
@@ -1343,8 +1343,7 @@ strong {
   }
 
   .letter__card,
-  .contact__info,
-  .contact__form {
+  .contact__wrap {
     padding: 28px 22px;
   }
 

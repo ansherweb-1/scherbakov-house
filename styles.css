@@ -460,6 +460,46 @@ strong {
   font-size: 0.98rem;
 }
 
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 28px;
+  padding: 28px 0 8px;
+  border-top: 1px solid var(--line-soft);
+  margin-top: 8px;
+}
+
+.techs__label {
+  margin: 0;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.techs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+}
+
+.techs__list li {
+  color: var(--ivory-soft);
+  font-size: 0.98rem;
+}
+
+.techs__list strong {
+  color: var(--ivory);
+  margin-right: 6px;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
 /* Letter */
 .letter {
   padding: 120px 0;
